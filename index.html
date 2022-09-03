@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <script type="module" defer src="./index.js"></script>
+    <title>3D Credit Card</title>
+    <meta
+      name="description"
+      content="Custom 3D credit card render using Three.js"
+    />
+  </head>
+  <body>
+   
+    <img src="./loader.svg" id="loader" alt="Loader icon" />
+    <canvas id="canvas"></canvas>
+    <div class="cardInfoContainer">
+      <div class="content">
+        <h2 class="title">Apply Credit Card </h2>
+        <div class="inputDiv">
+          <label class="label" for="Name">Name:</label>
+          <input
+            class="inputField"
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Your Full Name"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="number">Enter your SSN</label>
+          <input
+            class="inputField"
+            type="text"
+            name="number"
+            id="number"
+            placeholder="XXX-XX-XXXX"
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="expiration">Enter you Address</label>
+          <input
+            class="inputField"
+            type="text"
+            name="expiration"
+            id="expiration"
+            placeholder=""
+          />
+        </div>
+        <div class="inputDiv">
+          <label class="label" for="expiration">Zip Code </label>
+          <input
+            class="inputField"
+            class="inputField"
+            type="text"
+            name="cvv"
+            id="cvv"
+            placeholder=""
+          />
+        </div>
+        <div class="inputDiv colorDiv">
+          <label class="label name" for="colorPicker">Card color:</label>
+          <input
+            class="colorPicker"
+            type="color"
+            name="color"
+            id="colorPicker"
+            value="#791d10"
+          />
+        </div>
+        <div class="inputDiv colorDiv">
+          <label class="label name" for="textColorPicker">Text color:</label>
+          <input
+            class="colorPicker"
+            type="color"
+            name="textColorPicker"
+            id="textColorPicker"
+            value="#ffffff"
+          />
+        </div>
+        <div class="inputDiv colorDiv">
+          <label class="label name" for="textColorPicker">Rotate Card:</label>
+          <input
+            class="rotateCard"
+            type="checkbox"
+            name="rotateCard"
+            id="rotateCard"
+            checked
+          />
+        </div>
+        <button id="confirm" class="confirmBtn">Close</button>
+      </div>
+    </div>
+    <button class="openModalBtn">Meta Apply </button>
+    <!-- <div class="textDiv">Enter the Card Details for Applying Synchrony Credit Card </div> -->
+  </body>
+</html>

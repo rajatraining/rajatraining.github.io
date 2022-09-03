@@ -1,0 +1,189 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#loader {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+}
+
+#canvas {
+  position: relative;
+  width: 50%;
+  outline: none;
+  background: url(office.jpeg) no-repeat center center;
+  background-size: contain;
+}
+
+.openModalBtn {
+  position: absolute;
+  top:150px;
+  height: 55px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  animation: popUp 3s ease forwards;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #4c4b4f;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 13px 2px rgba(255, 255, 255, 0.1);
+  color: #fafafa;
+  left: 450px;
+}
+
+.textDiv{
+  position: absolute;
+  
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  animation: popUp 0.6s ease forwards;
+  transition: all 0.3s ease;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  
+  font-size: 1.25rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 13px 2px rgba(255, 255, 255, 0.1);
+  color: #fafafa;
+}
+
+.openModalBtn:hover {
+  transform: scale(1.07);
+}
+
+.cardInfoContainer {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0rem;
+  margin: 0rem 2rem;
+  color: #131313;
+  font-weight: 500;
+  width: 100%;
+  top: 0%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.25rem;
+  padding: 2.5rem;
+  background-color: #fafafa;
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: #131313;
+  font-size: 2rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(18, 18, 18);
+}
+
+.inputDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.inputField {
+  background: none;
+  border: none;
+  border: 1px solid rgb(50, 50, 50);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border-radius: 0.125rem;
+}
+
+.colorDiv {
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.colorPicker {
+  cursor: pointer;
+  padding: 0rem;
+  border: none;
+}
+
+.rotateCard {
+  width: 20px;
+  cursor: pointer;
+}
+
+.confirmBtn {
+  padding: 0.5rem 2rem;
+  background-color: rgb(25, 7, 225);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  margin: 1rem 0rem;
+  color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.confirmBtn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes popUp {
+  from {
+    bottom: 0vh;
+  }
+  to {
+    bottom: 11vh;
+  }
+}
